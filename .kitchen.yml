@@ -11,11 +11,10 @@ provisioner:
 #   name: inspec
 
 platforms:
-  - name: ubuntu-14.04
-  - name: centos-7.1
+  - name: ubuntu-12.04
 
 suites:
   - name: default
     run_list:
-      - recipe[confd-cookbook::default]
+      - recipe[confd-cookbook::install]
     attributes:
